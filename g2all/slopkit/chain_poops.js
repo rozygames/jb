@@ -42,6 +42,7 @@ function hostOk() {
     var m = document.getElementById("msgs");
     if (m) {
         m.innerHTML = "GoldHEN v2.4b18.14 Saba Banta Yo Sanak";
+        if (window.rozyGoldhenSuccessNotice) window.rozyGoldhenSuccessNotice();
     }
 }
 
