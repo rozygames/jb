@@ -101,32 +101,17 @@ if (!isPS4) {
 }
 
 window.rozyGoldhenSuccessNotice = function () {
-    if (document.getElementById("rozyGoldhenNotice")) return;
-    var notice = document.createElement("div");
-    notice.id = "rozyGoldhenNotice";
-    notice.innerHTML = "Alhamdulillah, GoldHEN Aktif Sanak!<br>Kini PS4 Lah Siap Main Na Sanak!";
-    notice.style.position = "fixed";
-    notice.style.zIndex = "99999";
-    notice.style.top = "18px";
-    notice.style.left = "50%";
-    notice.style.transform = "translateX(-50%)";
-    notice.style.width = "calc(100% - 32px)";
-    notice.style.maxWidth = "560px";
-    notice.style.boxSizing = "border-box";
-    notice.style.padding = "14px 18px";
-    notice.style.border = "2px solid #35c46a";
-    notice.style.borderRadius = "12px";
-    notice.style.backgroundColor = "#0a1910";
-    notice.style.color = "#ffffff";
-    notice.style.webkitTextFillColor = "#ffffff";
-    notice.style.fontFamily = "Arial, sans-serif";
-    notice.style.fontSize = "17px";
-    notice.style.fontWeight = "bold";
-    notice.style.lineHeight = "1.45";
-    notice.style.textAlign = "center";
-    notice.style.whiteSpace = "normal";
-    notice.style.boxShadow = "0 5px 22px rgba(0,0,0,.55)";
-    document.body.appendChild(notice);
+    var status = document.getElementById("msgs") || document.getElementById("msg");
+    if (!status) return;
+    status.textContent = "Alhamdulillah, GoldHEN Aktif Sanak! Kini PS4 Lah Siap Main Na Sanak!";
+    status.style.color = "#ffffff";
+    status.style.textAlign = "center";
+    status.style.fontWeight = "bold";
+    status.style.backgroundColor = "rgba(0, 0, 0, 0.55)";
+    status.style.border = "2px solid #35c46a";
+    status.style.borderRadius = "10px";
+    status.style.padding = "12px 8px";
+    status.style.boxSizing = "border-box";
 };
 </script>
 <h1 id="msgs" class="g2all-status">Memuat GoldHEN v2.4b18.14... Mohon Ditunggu Yo Sanak</h1>
