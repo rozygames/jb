@@ -48,7 +48,7 @@ function hostOk() {
 function hostFail() {
     var m = document.getElementById("msgs");
     if (m) {
-        m.innerHTML = "Failed to Load! Restart Your Console ...";
+        m.innerHTML = "Goldhen Gagal Aktif Sanak!! Biaso Du Sanak Restart Sajo PS4 Liek";
         m.style.color = "yellow";
     }
 }
