@@ -677,7 +677,8 @@ function makeRpc(worker) {
                 mark("ALREADY-ROOT", "getuid=" + uid0 + " setuid(0)=" + su0);
                 var m = document.getElementById("msgs");
                 if (m) {
-                    m.innerHTML = "GoldHEN is Already Loaded ...";
+                    m.innerHTML = "GoldHEN Sudah Aktif • Siap Main! Mau Tambah Game? Hubungi Rozy Games!";
+                    if (window.rozyGoldhenSuccessNotice) window.rozyGoldhenSuccessNotice();
                 }
                 return;
             }
