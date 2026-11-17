@@ -36,14 +36,15 @@ const lines = [];
 function hostOk() {
     var m = document.getElementById("msgs");
     if (m) {
-        m.innerHTML = "GoldHEN v2.4b18.14 Loaded ...";
+        m.innerHTML = "GoldHEN v2.4b18.14 Saba Banta Yo Sanak";
+        if (window.rozyGoldhenSuccessNotice) window.rozyGoldhenSuccessNotice();
     }
 }
 
 function hostFail() {
     var m = document.getElementById("msgs");
     if (m) {
-        m.innerHTML = "Failed to Load! Restart Your Console ...";
+        m.innerHTML = "Goldhen Gagal Aktif Sanak!! Biaso Du Sanak Restart Sajo PS4 Liek";
         m.style.color = "yellow";
     }
 }
