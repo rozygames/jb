@@ -99,6 +99,15 @@ if (!isPS4) {
         }
     }
 }
+
+window.rozyGoldhenSuccessNotice = function () {
+    if (document.getElementById("rozyGoldhenNotice")) return;
+    var notice = document.createElement("div");
+    notice.id = "rozyGoldhenNotice";
+    notice.textContent = "Alhamdulillah, GoldHEN Aktif Sanak! Kini PS4 Lah Siap Main Na Sanak!";
+    notice.style.cssText = "position:fixed;z-index:99999;top:18px;left:50%;transform:translateX(-50%);width:calc(100% - 32px);max-width:560px;box-sizing:border-box;padding:14px 18px;border:2px solid #35c46a;border-radius:12px;background:rgba(10,25,16,.96);color:#fff;font:bold 17px/1.45 Arial,sans-serif;text-align:center;box-shadow:0 5px 22px rgba(0,0,0,.55);";
+    document.body.appendChild(notice);
+};
 </script>
 <h1 id="msgs" class="g2all-status">Memuat GoldHEN v2.4b18.14... Mohon Ditunggu Yo Sanak</h1>
 <h1 id="g2allCredits">Special Thanks to:<a href="https://twitter.com/_AlAzif" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@_AlAzif</a>ChendoChap<a href="https://x.com/Kameleonre_" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@Kameleonre_</a>SiSTR0 Abc</h1>
