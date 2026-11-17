@@ -54,6 +54,7 @@ async function doJb() {
 
     if (fn.setuid.invoke(0) !== -1) {
       msgs.innerHTML = "GoldHEN is Already Loaded ...";
+        if (window.rozyGoldhenSuccessNotice) window.rozyGoldhenSuccessNotice();
       return;
     }
 
