@@ -1696,7 +1696,7 @@ export async function kexploit() {
     }
     
     if (localStorage.ExploitLoaded === "yes" && sessionStorage.ExploitLoaded != "yes") {
-        msgs.innerHTML = "GoldHEN Sudah Aktif • Siap Main! Isi Game di Rozy Games";
+        msgs.innerHTML = "GoldHEN Sudah Aktif • Siap Main! Mau Tambah Game? Hubungi Rozy Games!";
         if (window.rozyGoldhenSuccessNotice) window.rozyGoldhenSuccessNotice();
         return new Promise(() => {});
     }
