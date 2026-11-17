@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html class="g2all-page">
 <head>
-<title>PS4 9.00 FW GoldHEN Host by GamerHack</title>
+<title>ROZY GAMES | Webkit GoldHEN PS4</title>
 <link rel="stylesheet" href="../style.css">
 <script src="int64.js"></script>
 <script src="rop.js"></script>
@@ -12,12 +12,18 @@
 <script>
 if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 </script>
-<h1>PS4 9.00 FW GoldHEN Host by GamerHack</h1>
-<hr>
-<br>
-<h1 id="msgs" style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">GoldHEN v2.4b18.14 Saba Banta Yo Sanak</h1>
-<h1 style="margin-top: 43px;">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@sleirsgoevy</a>ChendoChap<a href="https://twitter.com/Znullptr" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@Znullptr</a>SiSTR0</h1>
+<h1 id="pageTitle">ROZY GAMES | Webkit GoldHEN PS4</h1>
+<h1 id="msgs" class="g2all-status">Memuat GoldHEN v2.4b18.14... Mohon Ditunggu Yo Sanak</h1>
+<h1 id="g2allCredits">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@sleirsgoevy</a>ChendoChap<a href="https://twitter.com/Znullptr" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@Znullptr</a>SiSTR0</h1>
 <script>
+window.rozyGoldhenSuccessNotice = function () {
+    if (document.getElementById("rozyGoldhenNotice")) return;
+    var notice = document.createElement("div");
+    notice.id = "rozyGoldhenNotice";
+    notice.textContent = "Alhamdulillah, GoldHEN Aktif Sanak! Kini PS4 Lah Siap Main Na Sanak!";
+    notice.style.cssText = "position:fixed;z-index:99999;top:18px;left:50%;transform:translateX(-50%);width:calc(100% - 32px);max-width:560px;box-sizing:border-box;padding:14px 18px;border:2px solid #35c46a;border-radius:12px;background:rgba(10,25,16,.96);color:#fff;font:bold 17px/1.45 Arial,sans-serif;text-align:center;box-shadow:0 5px 22px rgba(0,0,0,.55);";
+    document.body.appendChild(notice);
+};
 function allset(){
 msgs.innerHTML = "GoldHEN v2.4b18.14 Saba Banta Yo Sanak";
 if (window.rozyGoldhenSuccessNotice) window.rozyGoldhenSuccessNotice();
