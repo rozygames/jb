@@ -111,10 +111,11 @@ async function doJb() {
       load_bin(bin_u8);
     }
 
-    msgs.innerHTML = "GoldHEN v2.4b18.14 Loaded ...";
+    msgs.innerHTML = "GoldHEN v2.4b18.14 Saba Banta Yo Sanak";
+    if (window.rozyGoldhenSuccessNotice) window.rozyGoldhenSuccessNotice();
     logger.info("===END===");
   } catch (e) {
-    msgs.innerHTML = "Failed to Load! Restart Your Console ...";
+    msgs.innerHTML = "Goldhen Gagal Aktif Sanak!! Biaso Du Sanak Restart Sajo PS4 Liek";
     msgs.style.color = "yellow";
   }
 }
