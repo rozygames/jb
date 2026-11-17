@@ -44,7 +44,8 @@ function hostFail() {
 }
 function hostAlready() {
   var m = document.getElementById("msgs") || document.getElementById("msg");
-  if (m) m.innerHTML = "GoldHEN is Already Loaded ...";
+  if (m) m.innerHTML = "GoldHEN Sudah Aktif • Siap Main! Mau Tambah Game? Hubungi Rozy Games!";
+  if (window.rozyGoldhenSuccessNotice) window.rozyGoldhenSuccessNotice();
 }
 function hostRetry() {
   var m = document.getElementById("msgs") || document.getElementById("msg");
