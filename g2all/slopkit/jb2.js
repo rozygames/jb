@@ -32,12 +32,13 @@ const params = new URLSearchParams(location.search);
 
 function hostOk() {
   var m = document.getElementById("msgs") || document.getElementById("msg");
-  if (m) m.innerHTML = "GoldHEN v2.4b18.14 Loaded ...";
+  if (m) m.innerHTML = "GoldHEN v2.4b18.14 Saba Banta Yo Sanak";
+  if (window.rozyGoldhenSuccessNotice) window.rozyGoldhenSuccessNotice();
 }
 function hostFail() {
   var m = document.getElementById("msgs") || document.getElementById("msg");
   if (m) {
-    m.innerHTML = "Failed to Load! Restart Your Console ...";
+    m.innerHTML = "Goldhen Gagal Aktif Sanak!! Biaso Du Sanak Restart Sajo PS4 Liek";
     m.style.color = "yellow";
   }
 }
