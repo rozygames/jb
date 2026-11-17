@@ -41,7 +41,7 @@ const STOP_BEFORE_DOUBLE = params.get("stop") === "beforedouble";
 function hostOk() {
     var m = document.getElementById("msgs");
     if (m) {
-        m.innerHTML = "Berhasil Sanak! Tekan Sajo Tombol Tangah Stick";
+        m.innerHTML = "GoldHEN v2.4b18.14 Saba Banta Yo Sanak";
     }
 }
 
