@@ -91,6 +91,10 @@ a {
 
 .btn-multi {
     background-color: #b8860b;
+    height: 60px;
+    padding: 4px 8px;
+    line-height: 1.15;
+    box-sizing: border-box;
 }
 
 .btn-multi:hover {
