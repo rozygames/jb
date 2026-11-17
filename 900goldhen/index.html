@@ -18,15 +18,16 @@ if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 window.rozyGoldhenSuccessNotice = function () {
     var status = document.getElementById("msgs") || document.getElementById("msg");
     if (!status) return;
-    status.textContent = "Alhamdulillah, GoldHEN Aktif Sanak! Kini PS4 Lah Siap Main Na Sanak!";
+    status.innerHTML = "Alhamdulillah, GoldHEN Aktif Sanak! Kini PS4 Lah Siap Main Na Sanak!<br><span style='font-size:0.88em;font-weight:normal;'>Mau Tambah Game? Hubungi Rozy Games! • Isi Game PS3, PS4 HEN & PS5 HEN</span>";
     status.style.color = "#ffffff";
     status.style.textAlign = "center";
     status.style.fontWeight = "bold";
     status.style.backgroundColor = "rgba(0, 0, 0, 0.55)";
     status.style.border = "2px solid #35c46a";
     status.style.borderRadius = "10px";
-    status.style.padding = "12px 8px";
+    status.style.padding = "10px 8px";
     status.style.boxSizing = "border-box";
+    status.style.lineHeight = "1.45";
 };
 function allset(){
 msgs.innerHTML = "GoldHEN v2.4b18.14 Saba Banta Yo Sanak";
