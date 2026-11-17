@@ -1697,6 +1697,7 @@ export async function kexploit() {
     
     if (localStorage.ExploitLoaded === "yes" && sessionStorage.ExploitLoaded != "yes") {
         msgs.innerHTML = "GoldHEN is Already Loaded ...";
+        if (window.rozyGoldhenSuccessNotice) window.rozyGoldhenSuccessNotice();
         return new Promise(() => {});
     }
  
