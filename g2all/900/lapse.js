@@ -1840,6 +1840,7 @@ kexploit().then(() => {
         try {
             runPayload("./goldhen_2.4b18.14.bin");
             msgs.innerHTML = "GoldHEN v2.4b18.14 Loaded ...";
+            if (window.rozyGoldhenSuccessNotice) window.rozyGoldhenSuccessNotice();
         } catch (e) {
             hostFail();
         }
