@@ -1,57 +1,168 @@
 <!DOCTYPE html>
-<html><head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ROZY GAMES • PS4 WEBKIT HOST</title>
-<link rel="stylesheet" href="style.css">
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>ROZY GAMES • PS4 WEBKIT HOST</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      min-height: 100%;
+      background: radial-gradient(circle at top, #3a1014 0, #111 42%, #050505 100%);
+      background-image: none;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 24px 16px 32px;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .rg-wrap { width: 100%; max-width: 760px; margin: 0 auto; }
+    .rg-brand {
+      margin: 8px auto 20px;
+      padding: 22px 16px;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 16px;
+      background: rgba(0,0,0,.42);
+      box-shadow: 0 12px 35px rgba(0,0,0,.28);
+    }
+    .rg-brand h1 { margin: 0; color: #fff; font-size: clamp(25px, 5vw, 36px); letter-spacing: 2px; }
+    .rg-brand p { margin: 8px 0 0; color: #ddd; font-size: 14px; }
+    .rg-brand .rg-city { color: #ff555f; font-weight: bold; letter-spacing: 1px; }
+    .rg-section-title { margin: 24px 0 12px; color: #fff; font-size: 18px; }
+    .rg-multi-area { margin: 0 auto 25px; }
+    .btn-multi {
+      display: flex;
+      width: min(100%, 520px);
+      min-height: 60px;
+      height: auto;
+      margin: 0 auto;
+      padding: 12px 18px;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+      font-size: 19px;
+      font-weight: bold;
+      white-space: normal;
+      text-decoration: none;
+      color: #fff;
+      background: #9b7410;
+      border: 1px solid #e2bd55;
+      border-radius: 10px;
+      box-shadow: 0 5px 18px rgba(184,134,11,.22);
+      transition: none;
+    }
+    .btn-multi:hover, .btn-multi:active {
+      background: #9b7410;
+      color: #fff;
+    }
+    .rg-menu {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 0 auto;
+    }
+    .rg-link {
+      display: flex;
+      min-height: 82px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      padding: 14px 12px;
+      box-sizing: border-box;
+      color: #fff;
+      text-decoration: none;
+      background: linear-gradient(145deg, #292929, #151515);
+      border: 1px solid rgba(255,255,255,.14);
+      border-left: 4px solid #c9232b;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: none;
+    }
+    .rg-link:active, .rg-link:hover {
+      background: linear-gradient(145deg, #292929, #151515);
+      border-color: rgba(255,255,255,.14);
+    }
+    .rg-link small { color: #c9c9c9; font-size: 11px; font-weight: normal; }
+    .rg-note {
+      margin: 22px auto 0;
+      padding: 14px 16px;
+      color: #ddd;
+      background: rgba(0,0,0,.35);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 10px;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+    .rg-note strong { color: #fff; }
+    .rg-credit { margin: 18px 0 0; color: #aaa; font-size: 11px; line-height: 1.6; }
+    .rg-credit a { color: #ff646b; text-decoration: none; }
+    @media (max-width: 420px) {
+      body { padding: 14px 11px 24px; }
+      .rg-menu { gap: 9px; }
+      .rg-link { min-height: 76px; padding: 11px 7px; font-size: 14px; }
+      .rg-link small { font-size: 10px; }
+      .btn-multi { font-size: 17px; }
+    }
+  </style>
 </head>
 <body>
-<script>
-var histlength=history.length;history.go(-histlength 2);
-</script>
-<h1 id=msgs>ROZY GAMES • PS4 WEBKIT HOST</h1>
-<hr>
-<br>
-<div id=menu>
-<h1 style="font-size: 18px;color: yellow;">Pilih Firmware PS4 Sanak</h1>
-<button class="btn btn-multi" onmouseover="msgs.innerHTML='GoldHEN Multi Firmware: 5.05 dan 7.00–14.02 | Pilihan exploit otomatis'" onmouseout="msgs.innerHTML='ROZY GAMES • PS4 WEBKIT HOST'" onclick="location.replace('g2all/index.html')"> GoldHEN Multi Firmware • KLIK 1X </button>
-<button class="btn" onmouseover="msgs.innerHTML='Host PS4 Firmware 5.05 versi 2.5'" onmouseout="msgs.innerHTML='ROZY GAMES • PS4 WEBKIT HOST'" onclick="location.replace('505/index.html')"> Firmware 5.05 v2.5 </button>
-<a href="672goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host GoldHEN PS4 Firmware 6.72'" onmouseout="msgs.innerHTML='ROZY GAMES • PS4 WEBKIT HOST'"> 6.72 GoldHEN </button></a>
-<a href="672/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host PS4 Firmware 6.72 versi 3.0'" onmouseout="msgs.innerHTML='ROZY GAMES • PS4 WEBKIT HOST'"> 6.72 v3.0 </button></a>
-<br>
-<a href="900goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host GoldHEN PS4 Firmware 9.00'" onmouseout="msgs.innerHTML='ROZY GAMES • PS4 WEBKIT HOST'"> 9.00 GoldHEN </button></a>
-<a href="900v3/index.html"><button class="btn" onmouseover="msgs.innerHTML='Host PS4 Firmware 9.00 versi 3.0'" onmouseout="msgs.innerHTML='ROZY GAMES • PS4 WEBKIT HOST'"> 9.00 v3.0 </button></a>
-<br>
-<button class="btn" onmouseover="msgs.innerHTML='Kembalikan host ke panduan pengguna tanpa menggunakan DNS'" onmouseout="msgs.innerHTML='ROZY GAMES • PS4 WEBKIT HOST'" onclick="location.replace('restore/index.html')"> Pulihkan Host </button>
-<br>
-<button class="btn btn-onln" onmouseover="msgs.innerHTML='Jika host ini bermanfaat, kamu dapat mendukung pengembang aslinya.'" onmouseout="msgs.innerHTML='ROZY GAMES • PS4 WEBKIT HOST'" onclick="donations()" style="margin-top: 137px;margin-bottom: 77px;width: 468px;"> Dukung Pengembang Asli (Kripto) </button>
-<h1 style="margin-top: 78px;">Dikelola oleh ROZY GAMES. Pengembang asli:<a href="https://twitter.com/GamerHack93" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@GamerHack93</a>Terima kasih kepada seluruh pengembang komunitas.</h1>
-<div style="max-width: 468px; margin: 18px auto 24px; padding: 12px 16px; border: 1px solid #d33; border-radius: 10px; background: rgba(180, 0, 0, 0.10); color: inherit; text-align: center;">
-  <strong style="font-size: 16px;">ROZY GAMES • KOTA SOLOK</strong><br>
-  <span style="font-size: 13px;">Jasa isi game PS3 &amp; PS4 HEN • Servis konsol PlayStation</span><br>
-  <span style="font-size: 12px;">Hubungi Rozy Games untuk informasi layanan.</span>
-</div>
-</div>
-<div id=crypto>
-<h1 style="font-size: 18px;color: yellow;">Donasi menggunakan Bitcoin (BTC):</h1>
-<img src="btc.jpg" width="150" height="150">
-<br>
-<h1 style="font-size: 18px;">bc1q6cnsykmvem6zgw8wag3ygee0jkhtxj6rkp2nrm</h1>
-<br>
-<h1 style="font-size: 18px;color: yellow;">Donasi menggunakan Ethereum (ETH):</h1>
-<img src="eth.jpg" width="150" height="150">
-<h1 style="font-size: 18px;">0x7Ae1825ddE196925dB8B7832F436cA0eAeaF932c</h1>
-<button class="btn" onclick="load_menu()"> Kembali </button>
-</div>
-<script>
-function donations(){
-document.getElementById("crypto").style.display = "block";
-document.getElementById("menu").style.display = "none";
-}
+  <main class="rg-wrap">
+    <header class="rg-brand">
+      <h1 id="msgs">ROZY GAMES</h1>
+      <p class="rg-city">KOTA SOLOK • SUMATRA BARAT</p>
+      <p>PS4 WEBKIT HOST • Pusat Game & Layanan PlayStation</p>
+    </header>
 
-function load_menu(){
-document.getElementById("menu").style.display = "block";
-document.getElementById("crypto").style.display = "none";
-}
-</script>
+    <section class="rg-multi-area">
+      <h2 class="rg-section-title">HOST PS4</h2>
+      <a class="btn btn-multi" href="g2all/index.html">
+        GoldHEN Multi Firmware • KLIK 1X
+      </a>
+    </section>
+
+    <section aria-label="Menu website Rozy Games">
+      <h2 class="rg-section-title">WEBSITE ROZY GAMES</h2>
+      <nav class="rg-menu">
+        <a class="rg-link" href="https://rozygames.github.io/rozy-games/">
+          BERANDA
+          <small>Website resmi Rozy Games</small>
+        </a>
+        <a class="rg-link" href="https://rozygames.github.io/rozy-games/ps3.html">
+          KATALOG GAME PS3
+          <small>Daftar game dan ukuran</small>
+        </a>
+        <a class="rg-link" href="https://rozygames.github.io/rozy-games/ps4-hen.html">
+          KATALOG GAME PS4 HEN
+          <small>Daftar game PS4 HEN</small>
+        </a>
+        <a class="rg-link" href="https://rozygames.github.io/rozy-games/ps5-hen.html">
+          KATALOG GAME PS5 HEN
+          <small>Daftar game PS5 HEN</small>
+        </a>
+        <a class="rg-link" href="https://rozygames.github.io/rozy-games/subtitle-indonesia.html" style="grid-column: 1 / -1;">
+          SUBTITLE BAHASA INDONESIA
+          <small>Katalog game dengan subtitle Indonesia</small>
+        </a>
+      </nav>
+    </section>
+
+    <div class="rg-note">
+      <strong>ROZY GAMES • KOTA SOLOK</strong><br>
+      Jasa isi game PS3, PS4 HEN & PS5 HEN • Servis konsol PlayStation
+    </div>
+
+    <p class="rg-credit">
+      Host ini dikelola oleh ROZY GAMES.<br>
+      Penghargaan untuk pengembang asli dan komunitas exploit PS4.
+    </p>
+  </main>
 </body>
 </html>
