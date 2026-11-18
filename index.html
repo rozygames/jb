@@ -37,18 +37,29 @@
     .rg-section-title { margin: 24px 0 12px; color: #fff; font-size: 18px; }
     .rg-multi-area { margin: 0 auto 25px; }
     .btn-multi {
-      display: block;
+      display: flex;
       width: min(100%, 520px);
       min-height: 60px;
       height: auto;
       margin: 0 auto;
       padding: 12px 18px;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
       font-size: 19px;
       font-weight: bold;
       white-space: normal;
+      text-decoration: none;
+      color: #fff;
+      background: #9b7410;
       border: 1px solid #e2bd55;
       border-radius: 10px;
       box-shadow: 0 5px 18px rgba(184,134,11,.22);
+      transition: none;
+    }
+    .btn-multi:hover, .btn-multi:active {
+      background: #9b7410;
+      color: #fff;
     }
     .rg-menu {
       display: grid;
@@ -73,11 +84,11 @@
       border-radius: 10px;
       font-size: 16px;
       font-weight: bold;
-      transition: background .2s, border-color .2s;
+      transition: none;
     }
     .rg-link:active, .rg-link:hover {
-      background: linear-gradient(145deg, #4a171b, #211113);
-      border-color: #d83b43;
+      background: linear-gradient(145deg, #292929, #151515);
+      border-color: rgba(255,255,255,.14);
     }
     .rg-link small { color: #c9c9c9; font-size: 11px; font-weight: normal; }
     .rg-note {
@@ -112,12 +123,9 @@
 
     <section class="rg-multi-area">
       <h2 class="rg-section-title">HOST PS4</h2>
-      <button class="btn btn-multi"
-        onmouseover="msgs.innerHTML='GoldHEN Multi Firmware: 5.05 sampai 14.02'"
-        onmouseout="msgs.innerHTML='ROZY GAMES'"
-        onclick="location.replace('g2all/index.html')">
+      <a class="btn btn-multi" href="g2all/index.html">
         GoldHEN Multi Firmware • KLIK 1X
-      </button>
+      </a>
     </section>
 
     <section aria-label="Menu website Rozy Games">
